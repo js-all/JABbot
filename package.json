@@ -1,0 +1,12 @@
+{
+    "name": "the-dark-bot",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "discord": "^0.8.2",
+        "discord.js": "^11.4.2",
+        "eslint": "^5.5.0",
+        "npm": "^6.4.1",
+        "require-dir": "^1.0.0"
+    }
+}

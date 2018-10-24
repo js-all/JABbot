@@ -1,0 +1,60 @@
+{
+    "<@299165255639105536>": {
+        "user": "le gigantissime manitou",
+        "points": 4810,
+        "lvl": 12,
+        "money": 11750,
+        "msg": 481,
+        "msgS": 134,
+        "roles": ["ADMIN"],
+        "Object": {
+            "pomme-de-terrre-negative": {
+                "nbre": null
+            }
+        }
+    },
+    "<@368681367115923457>": {
+        "user": "GOUDA man",
+        "points": 260,
+        "lvl": 5,
+        "money": 500,
+        "msg": 36,
+        "msgS": 28,
+        "roles": [],
+        "Object": {
+            "gouda": {
+                "nbre": null
+            }
+        }
+    },
+    "<@448435528384249866>": {
+        "user": "craaaaaaaaaaaaaaaabeeeeee",
+        "points": 210,
+        "lvl": 4,
+        "money": 2250,
+        "msgS": 4,
+        "msg": 21,
+        "roles": [],
+        "Object": {}
+    },
+    "<@488028627116490752>": {
+        "user": "POULOULOU_official",
+        "points": 20,
+        "lvl": 2,
+        "money": 500,
+        "msgS": 0,
+        "msg": 2,
+        "roles": [],
+        "Object": {}
+    },
+    "<@457643696653991936>": {
+        "user": "JAB",
+        "points": 440,
+        "lvl": 5,
+        "money": 1000,
+        "msgS": 10,
+        "msg": 44,
+        "roles": [],
+        "Object": {}
+    }
+}
