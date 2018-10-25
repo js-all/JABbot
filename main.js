@@ -25,7 +25,7 @@ bot.on('ready', () => {
 bot.login('TOKEN');
 // initialization de l'objet acc servent a stocké les compte
 var acc = {
-    "<@299165255639105536>": {
+    "<@666>": {
         user: 'bot acc corupted',
         points: 318648,
         lvl: 99,
