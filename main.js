@@ -6,28 +6,23 @@ var LOG = require('./js/ext/log.js');
 var prefix = '\\.';
 var bot = new Discord.Client();
 var colors = require('colors');
+const dbm = require('./js/ext/dbManager');
 
 
 // informé quand le bot est pret
 bot.on('ready', () => {
     bot.user.setActivity(prefix.slice(1) + '.help | ' + bot.guilds.size + ' server');
-    bot.channels.find('name', 'ephemer').fetchMessages()
-        .then(messages => messages.array().forEach(
-            message => message.delete()
-        ));
-    bot.channels.find('name', 'ephemer').send('**```dans ce salon tout msg ne dure que 10 sec\n\nexpter ceux de bot dont le temp de supresion est  d\'un dixiem de second```**');
     console.clear();
     setTimeout(() => {
         //console.clear();
         LOG.logT();
         LOG.cd();
     }, 1);
-    bot.channels.find('id','492737031987003392').send('OUI');
 
 });
 
 // connecter le bot
-bot.login('NDU3NjQzNjk2NjUzOTkxOTM2.DggxWg.zRkI_RLmQRWfA2lq6KGja09qh-E');
+bot.login('TOKEN');
 // initialization de l'objet acc servent a stocké les compte
 var acc = {
     "<@299165255639105536>": {
@@ -40,11 +35,14 @@ var acc = {
         roles: ['ADMIN']
     }
 }
+
 // log
 LOG.date();
 // quand des message sont envoyer
-bot.on('message', message => {
-    
+bot.on('message', dbMsg );
+
+
+function msg(message, acc) {
     bot.user.setActivity(prefix.slice(1) + '.help | ' + bot.guilds.size + ' server');
     mes = message.content;
     // definition du surnom du bot via la command !nickname
@@ -58,8 +56,10 @@ bot.on('message', message => {
     // regExp de test pour savoire si il y a le prefix de la command
     var dbc = new RegExp(prefix + "\\.\.+", "i");
     if (dbc.test(message.content)) {
-        acc = JSON.parse(fs.readFileSync(__dirname + '/acc.json'));
-        var co = requireDir('./js/command');
+        var co = {
+            req: requireDir('./js/command/accountReq'),
+            noReq: requireDir('./js/command/noAccountReq')
+        }
         var rereg = new RegExp(prefix + "\\.", "i");
         var com = message.content.replace(rereg, '');
         var args = com.trim().split(/ +/g);
@@ -68,37 +68,54 @@ bot.on('message', message => {
         }
         args.shift();
         com = com.split(/ +/)[0];
-        fs.readdir(__dirname + '/js/command', (err, files) => {
-            for (var hiu = 0; hiu < files.length; hiu++) {
+        fs.readdir(__dirname + '/js/command/noAccountReq', (err, files) => {
+            for (let hiu = 0; hiu < files.length; hiu++) {
                 files[hiu] = files[hiu].substring(0, (files[hiu].length - 3));
             }
-            for (var hu = 0; hu < files.length; hu++) {
-                var a = co[files[hu]]._(com, acc, prefix, args, message, bot);
-                if (a != undefined) { acc = a;}
-                
-            
-
+            for (let hu = 0; hu < files.length; hu++) {
+                if (com == files[hu]) {
+                    LOG.log(com, args, message.author.username, message.author.id);
+                    LOG.cl(com, args, message.author.username, message.author.id);
+                    co.noReq[files[hu]]._(com, prefix, args, message, bot);
+                }
             }
-            
-            LOG.log(com, args, message.author.username, message.author.id);
-            LOG.cl(com, args, message.author.username, message.author.id);
         });
-        fs.writeFileSync(__dirname + '/acc.json', JSON.stringify(acc));
+        fs.readdir(__dirname + '/js/command/accountReq', (err, files) => {
+            let filesCom = [];
+            for (let j = 0; j < files.length; j++) {
+                filesCom.push(files[j].substring(0, (files[j].length - 3)));
+            }
+            for (let j = 0; j < filesCom.length; j++) {
+                if (com == filesCom[j]) {
+                    LOG.log(com, args, message.author.username, message.author.id);
+                    LOG.cl(com, args, message.author.username, message.author.id);
+                    const com_ = filesCom[j];
+                    let a = co.req[com_]._(com, acc, prefix, args, message, bot);
+                    if (com.modifyAcc) {
+                        if (a == undefined) {
+                            console.log('acc not returned');
+                        } else {
+                            acc = a;
+                        }
+                    }
+                }
+            }
+        });
     }
 
 
 
     // on incremente les point a chaque mesg
-    if (acc[message.author] != undefined) {
-        acc[message.author].msgS++;
-        acc[message.author].msg++;
-        acc[message.author].points += acc[message.author].lvl * 5;
+    if (acc["<@"+message.author.id+">"] != undefined) {
+        acc["<@"+message.author.id+">"].msgS++;
+        acc["<@"+message.author.id+">"].msg++;
+        acc["<@"+message.author.id+">"].points += acc["<@"+message.author.id+">"].lvl * 5;
         // si les condition pour augmenter de niveaux son complete on le fait
-        if (acc[message.author].msgS == ((acc[message.author].lvl * acc[message.author].lvl) + 1)) {
-            acc[message.author].lvl++;
-            acc[message.author].msgS = 0;
-            acc[message.author].money += acc[message.author].lvl * 250;
-            message.channel.send(`_Félicitation ,${message.author} vous êtes passé lvl ${acc[message.author].lvl} !, vous gagné ${acc[message.author].lvl * 250} de money_`);
+        if (acc["<@"+message.author.id+">"].msgS == ((acc["<@"+message.author.id+">"].lvl * acc["<@"+message.author.id+">"].lvl) + 1)) {
+            acc["<@"+message.author.id+">"].lvl++;
+            acc["<@"+message.author.id+">"].msgS = 0;
+            acc["<@"+message.author.id+">"].money += acc["<@"+message.author.id+">"].lvl * 250;
+            message.channel.send(`_Félicitation ,${message.author} vous êtes passé lvl ${acc["<@"+message.author.id+">"].lvl} !, vous gagné ${acc["<@"+message.author.id+">"].lvl * 250} de money_`);
         }
 
     }
@@ -113,25 +130,19 @@ bot.on('message', message => {
             }, (s * 1000));
         }
     }
-    if (message.channel.id == '486196459025334282') {
-        if (message.author.id == bot.user.id) {
-            if (message.content == '**```dans ce salon tout msg ne dure que 10 sec\n\nexpter ceux de bot dont le temp de supresion est  d\'un dixiem de second```**') {
 
-            } else {
-                setTimeout(() => {
-                    message.delete();
-                }, 100);
-            }
-        } else {
-            setTimeout(() => {
-                message.delete();
-            }, 10000);
-        }
 
-    }
-    
-    
-});
+    return acc;
+}
+
+function dbMsg(message) {
+    dbm.getAcc(ac => {
+        let accc = msg(message, ac);
+        dbm.setAcc(accc);
+    });
+}
+
+
 // quand un nouveau menbre rejoin
 bot.on('guildMemberAdd', (member) => {
 
@@ -142,7 +153,7 @@ bot.on('guildMemberRemove', (member) => {
     bot.channels.find(val => val.id == '485864813616955432').send('au revoire' + member + '_ahh... il/elle est enfin parti(e).._');
 
 });
-bot.on('disconnect',() => {
-    bot.channels.find('id','492737031987003392').fetchMessages().then(messages => messages.array().forEach(message => message.delete()));
-    bot.channels.find('id','492737031987003392').send('NON');
+bot.on('disconnect', () => {
+    bot.channels.find('id', '492737031987003392').fetchMessages().then(messages => messages.array().forEach(message => message.delete()));
+    bot.channels.find('id', '492737031987003392').send('NON');
 });

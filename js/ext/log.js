@@ -82,7 +82,7 @@ module.exports = {
             d.getHours() +
             ':' +
             d.getMinutes() +
-            '\n**command** -- `params` -- _nom_ -- _id_\n\n';
+            '\n\n**command** -- `params` -- _nom_ -- _id_\n\n';
         fs.writeFile(__dirname+'/../../log.md', nl, 'utf-8', (err) => {
             if (err) throw err;
         });
