@@ -35,7 +35,7 @@ module.exports = {
                 });
             }
         }
-        
+        return acc;
     },
-    modifyAcc: false
+    modifyAcc: true
 }
