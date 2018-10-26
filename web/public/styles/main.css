@@ -1,0 +1,23 @@
+#header {
+    background-image: url("../images/JAB.png");
+    width:100%;
+    position: relative;
+    top:-8px;
+    left:-8px;
+    height:300px;
+    width: 300px;
+    background-size: 80%;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 50%;
+    background-position-x: 40%;
+    margin: auto;
+
+    background-repeat: no-repeat;
+}
+#container {
+    position: absolute;
+    top:0;
+    left:0;
+    height:1300px;
+    width:100%;
+}

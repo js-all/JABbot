@@ -69,7 +69,7 @@ module.exports = {
 
         }
         // enregistré la date du lancement du bot dans log.md
-        var nl = fs.readFileSync(__dirname+'/../../log.md') +
+        var nl = fs.readFileSync(__dirname + '/../../log.md') +
             '## le ' +
             g +
             ' ' +
@@ -83,21 +83,21 @@ module.exports = {
             ':' +
             d.getMinutes() +
             '\n\n**command** -- `params` -- _nom_ -- _id_\n\n';
-        fs.writeFile(__dirname+'/../../log.md', nl, 'utf-8', (err) => {
+        fs.writeFile(__dirname + '/../../log.md', nl, 'utf-8', (err) => {
             if (err) throw err;
         });
     },
     log: (cn, p, n, id) => {
         var ifm = (p[0] != undefined) ? '`' : '';
-        var llog = '**' + cn + '** , '+ifm + p + ifm + ' by _' + n + '_ id, _<@' + id + '>_\n\n';
-        llog = fs.readFileSync(__dirname+'/../../log.md') + llog;
-        fs.writeFile(__dirname+'/../../log.md', llog, 'utf-8', (err) => {
+        var llog = '**' + cn + '** , ' + ifm + p + ifm + ' by _' + n + '_ id, _<@' + id + '>_\n\n';
+        llog = fs.readFileSync(__dirname + '/../../log.md') + llog;
+        fs.writeFile(__dirname + '/../../log.md', llog, 'utf-8', (err) => {
             if (err) throw err;
         });
     },
-    cl: (cn,p,n,id) => {
-        
-        var llog = '\n' + cn.red + ' , '+ p.toString().green + ' by ' + n.cyan + ' id, <@'.yellow + id.yellow + '>\n'.yellow;
+    cl: (cn, p, n, id) => {
+
+        var llog = '\n' + cn.red + ' , ' + p.toString().green + ' by ' + n.cyan + ' id, <@'.yellow + id.yellow + '>\n'.yellow;
         console.log(llog);
     },
     cd: () => {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/acc.css" />
+    <script src="scripts/acc.js"></script>
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io('http://localhost:4567');
+        socket.emit('tokenToDataReq', token);
+        var data = {};
+        socket.on('tokenToDataRes',(res) => {
+            console.log(JSON.parse(res));
+            if (JSON.parse(res).code != undefined) {
+                if (JSON.parse(res).code == 0) {
+                    //alert('connexion error redirecting to login.');
+                    //location.href = '/login';
+                }
+            } else {
+                data = JSON.parse(res);
+                socket.emit('IDdbReq',data.id);
+            }
+        });
+        socket.on('IDdbRes',(res) => {
+            if (res.code == undefined) {
+                data.db = res;
+            } else {
+                alert('connexion error redirecting to login.');
+                location.href = '/login';
+            }
+        });
+        
+    </script>
+</body>
+</html>

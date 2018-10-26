@@ -1,6 +1,6 @@
 const sqlite = require('sqlite3');
 sqlite.verbose();
-var db = new sqlite.Database(__dirname + '/../../db/account.db3');
+const db = new sqlite.Database(__dirname + '/../../db/account.db3');
 module.exports = {
     getAcc(callBack) {
         let res = {};
@@ -22,7 +22,7 @@ module.exports = {
                 }
             }
         }, () => {
-            if (callBack != undefined) callBack(res);
+            if (callBack != undefined && typeof callBack == 'function') callBack(res);
             return res;
         });
     },
