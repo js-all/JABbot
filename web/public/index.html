@@ -2,6 +2,7 @@
 <html>
 
 <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JABbot</title>
@@ -10,16 +11,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="menuLEFT">
-            <div id="menuACC" class="menu"></div>
-        </div>
-        <div id="header"></div>
-        <div id="menuRIGHT"></div>
-        <div id="nav"></div>
-        <div id="container"></div>
+    <div id="nav">
+            <div id="icon" onclick="location.href = '/'"></div>
+            <div id="menu">
+                <a id="joinb" target="blank_" href="/join">ajoute JAB</a>
+            </div>
+            <div id="account">
+                <div id="pdp" onclick="location.href = '/account'"></div>
+                <div id="login" class="log" onclick="location.href = '/account'">login</div>
+                <div id="logout" class="log" onclick="logout()">logout</div>
+            </div>
     </div>
-    <script src="scripts/main.js"></script>
+    <div id="container"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./scripts/indexAcc.js"></script>
 </body>
 
 </html>

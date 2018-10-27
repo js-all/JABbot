@@ -101,13 +101,13 @@ module.exports = {
 
                         } else if (args[1] == 'c') {
                             if (acc["<@"+message.author.id+">"].money >= 2500) {
-                                if (args[2] != undefined && args[3] == undefined && args[2].indexOf('|') == -1) {
+                                if (args[2] != undefined && args[3] == undefined && args[2].indexOf('|') == -1 && /.{2,26}/.test(args[2]) && !/-{2,26}/.test(args[2])) {
                                     acc["<@"+message.author.id+">"].user = args[2].replace(/-/gi,' ');
                                     acc["<@"+message.author.id+">"].money -= 2500;
                                     message.channel.send(`votre nom de compte a été modifier en ${args[2].replace(/-/gi,' ')} pour 2500m ! ${message.author}`);
                                 }   
                                 else {
-                                    message.reply(`veuiller entré un nom valide après la commande ex : ${prefix}.buy N C mon-nouveau-nom , les tirret seron replacer par des espace sans bar vertical |`);
+                                    message.reply(`veuiller entré un nom valide après la commande ex : ${prefix}.buy N C mon-nouveau-nom , les tirret seron replacer par des espace. Sans bar vertical | et de longueure entre 2 et 26 ne contenent pas que des espaces.`);
                                 }
                             }
                             else {

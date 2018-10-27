@@ -6,35 +6,32 @@
     <title>account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/acc.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <script src="scripts/acc.js"></script>
 </head>
 <body>
+    <div id="nav">
+            <div id="icon" onclick="location.href = '/'"></div>
+            <div id="menu">
+                <div id="joinb" onclick="location.href = '/join'"">ajoute JAB</div>
+            </div>
+            <div id="account">
+                <div id="pdp" onclick="location.href = '/account'"></div>
+                <div id="login" class="log" onclick="location.href = '/account'"></div>
+                <div id="logout" class="log" style="display: block;" onclick="logout()">logout</div>
+            </div>
+    </div>
+    <div id="container">
+        <div id="acc">
+
+        </div>
+        <div id="noAcc">
+            <p id="noAccp" class="g"><h1 class="g">Vous ne posseder pas de compte JAB.</h1></p>
+            <p id="naAccs" class="g"><h3 class="g">Mais vous pouver vous en crée un en cliquant <a onclick="createAcc()">ici</a> ou via discord comme expliquer <a>ici</a> !</h3></p>
+        </div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io('http://localhost:4567');
-        socket.emit('tokenToDataReq', token);
-        var data = {};
-        socket.on('tokenToDataRes',(res) => {
-            console.log(JSON.parse(res));
-            if (JSON.parse(res).code != undefined) {
-                if (JSON.parse(res).code == 0) {
-                    //alert('connexion error redirecting to login.');
-                    //location.href = '/login';
-                }
-            } else {
-                data = JSON.parse(res);
-                socket.emit('IDdbReq',data.id);
-            }
-        });
-        socket.on('IDdbRes',(res) => {
-            if (res.code == undefined) {
-                data.db = res;
-            } else {
-                alert('connexion error redirecting to login.');
-                location.href = '/login';
-            }
-        });
-        
-    </script>
+    <script src="./scripts/getAccData.js"></script>
+    <script src="./scripts/accMain.js"></script>
 </body>
 </html>

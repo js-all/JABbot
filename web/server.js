@@ -12,10 +12,14 @@ app.get('/',(req, res) => {
 });
 
 app.get('/login',(req, res) => {
-    res.sendFile(__dirname + '/public/login.html');
+    //res.sendFile(__dirname + '/public/login.html');
+    res.redirect("/discord/get/login")
 });
 app.get('/account',(req, res) => {
     res.sendFile(__dirname+'/public/acc.html');
+});
+app.get('/join',(req, res) => {
+    res.redirect(`https://discordapp.com/api/oauth2/authorize?client_id=${process.env.BOT_ID}&permissions=8&redirect_uri=http%3A%2F%2Flocalhost%3A4567%2F&scope=bot`);
 });
 
 app.use((err, req, res, next) => {
@@ -47,8 +51,6 @@ io.on('connection',(socket) => {
         }
         });
         const jason = await respo.json();
-        console.log(jason);
-        console.log(json);
         json.guilds = jason;
         socket.emit('tokenToDataRes',JSON.stringify(json));
     }));
@@ -67,3 +69,4 @@ io.on('connection',(socket) => {
 
 
 server.listen(4567);
+console.log('server')

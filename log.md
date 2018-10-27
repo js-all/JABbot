@@ -1,182 +1,270 @@
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
 
+..card..card..card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
 
-## le jeudi 25 octobre 2018 a 18:49
-
-**command** -- `params` -- _nom_ -- _id_
-
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-## le jeudi 25 octobre 2018 a 18:55
+e 2018 a 21:55
 
 **command** -- `params` -- _nom_ -- _id_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
-## le jeudi 25 octobre 2018 a 18:57
-
-**command** -- `params` -- _nom_ -- _id_
-
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-## le jeudi 25 octobre 2018 a 18:58
+## le samedi 27 octobre 2018 a 21:55
 
 **command** -- `params` -- _nom_ -- _id_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
-## le jeudi 25 octobre 2018 a 18:59
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
-**command** -- `params` -- _nom_ -- _id_
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-## le jeudi 25 octobre 2018 a 19:1
+## le samedi 27 octobre 2018 a 21:58
 
 **command** -- `params` -- _nom_ -- _id_
 
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
 **acc** ,  by _viandox_ id, _<@299165255639105536>_
 
-## le jeudi 25 octobre 2018 a 19:16
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+## le samedi 27 octobre 2018 a 22:9
 
 **command** -- `params` -- _nom_ -- _id_
 
-**shop** ,  by _viandox_ id, _<@299165255639105536>_
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
-**buy** , `n,c,je-suis-une-fleure` by _viandox_ id, _<@299165255639105536>_
+**buy** , `n,c,viandox` by _viandox_ id, _<@299165255639105536>_
+
+**bot** , `..card` by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _JAB_ id, _<@505009480635908096>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
 **acc** ,  by _viandox_ id, _<@299165255639105536>_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
+**buy** , `n,c,redhjgkljdfighjldffffgjhilfgbjkghkghl` by _viandox_ id, _<@299165255639105536>_
 
-**hello** ,  by _viandox_ id, _<@299165255639105536>_
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-**help** , `here` by _viandox_ id, _<@299165255639105536>_
-
-**pouloulou** ,  by _viandox_ id, _<@299165255639105536>_
-
-**acc** , `oui,mais,non` by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-**shop** ,  by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _POULOULOU_official_ id, _<@488028627116490752>_
-
-## le vendredi 26 octobre 2018 a 11:30
+## le samedi 27 octobre 2018 a 22:18
 
 **command** -- `params` -- _nom_ -- _id_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
+**buy** , `n,c,fgikujpdhilhfjooukcfgyujiosydkf_èhyjdkfo` by _viandox_ id, _<@299165255639105536>_
 
-**buy** , `n,c,test-update` by _viandox_ id, _<@299165255639105536>_
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26` by _JAB_ id, _<@505009480635908096>_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
+**buy** , `n,c,---` by _viandox_ id, _<@299165255639105536>_
 
-**buy** , `n,c,test` by _viandox_ id, _<@299165255639105536>_
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26` by _JAB_ id, _<@505009480635908096>_
 
-**acc** ,  by _viandox_ id, _<@299165255639105536>_
-
-**bot** , `..acc` by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _JAB_ id, _<@505009480635908096>_
-
-**bot** , `..acc` by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _JAB_ id, _<@505009480635908096>_
-
-**bot** , `..acc` by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _JAB_ id, _<@505009480635908096>_
-
-**bot** , `..bot,..bot,..acc` by _viandox_ id, _<@299165255639105536>_
-
-**bot** , `..bot,..acc` by _JAB_ id, _<@505009480635908096>_
-
-## le vendredi 26 octobre 2018 a 19:52
+## le samedi 27 octobre 2018 a 22:22
 
 **command** -- `params` -- _nom_ -- _id_
 
-**bot** , `..bot,..acc` by _viandox_ id, _<@299165255639105536>_
+**buy** , `n,c,o--` by _viandox_ id, _<@299165255639105536>_
 
-**bot** , `..acc` by _JAB_ id, _<@505009480635908096>_
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
 
-## le vendredi 26 octobre 2018 a 19:53
+**buy** , `n,c,neo-nazi-pro-trump-raciste-anti-roux` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**buy** , `n,c,neo-nazi-pro-trump-raciste` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**buy** , `n,c,neo-nazi-pro-trump-racist` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**buy** , `n,c,rddt` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+## le samedi 27 octobre 2018 a 22:25
 
 **command** -- `params` -- _nom_ -- _id_
 
-**bot** , `..bot,..bot,..bot,..acc` by _viandox_ id, _<@299165255639105536>_
+**buy** , `n,c,neo-nazi-pro-trump-raciste` by _viandox_ id, _<@299165255639105536>_
 
-**bot** , `..bot,..bot,..acc` by _JAB_ id, _<@505009480635908096>_
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
 
-**bot** , `..bot,..acc` by _JAB_ id, _<@505009480635908096>_
+**buy** , `n,c,neo-nazi-pro-trump` by _viandox_ id, _<@299165255639105536>_
 
-**bot** , `..acc` by _JAB_ id, _<@505009480635908096>_
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
 
-**acc** ,  by _JAB_ id, _<@505009480635908096>_
+**buy** , `n,c,neo` by _viandox_ id, _<@299165255639105536>_
 
-**bot** , `..heello` by _viandox_ id, _<@299165255639105536>_
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
 
-**bot** , `..hello` by _viandox_ id, _<@299165255639105536>_
+## le samedi 27 octobre 2018 a 22:26
 
-**hello** ,  by _JAB_ id, _<@505009480635908096>_
+**command** -- `params` -- _nom_ -- _id_
+
+**buy** , `n,c,neo-nazi-pro-trump-racist` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**buy** , `n,c,neo` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**buy** , `n,c,mon-nouveau-nom` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+## le samedi 27 octobre 2018 a 22:28
+
+**command** -- `params` -- _nom_ -- _id_
+
+**buy** , `n,c,mon-nouveau-nom` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**buy** , `n,c,mon` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+## le samedi 27 octobre 2018 a 22:29
+
+**command** -- `params` -- _nom_ -- _id_
+
+**buy** , `n,c,mon-nouveau-nom` by _viandox_ id, _<@299165255639105536>_
+
+**<@299165255639105536>,** , `veuiller,entré,un,nom,valide,après,la,commande,ex,:,\buy,n,c,mon-nouveau-nom,,,les,tirret,seron,replacer,par,des,espace.,sans,bar,vertical,|,et,de,longueure,entre,2,et,26,ne,contenent,pas,que,des,espaces.` by _JAB_ id, _<@505009480635908096>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+## le samedi 27 octobre 2018 a 22:33
+
+**command** -- `params` -- _nom_ -- _id_
+
+**buy** , `n,c,viandox` by _viandox_ id, _<@299165255639105536>_
+
+**buy** , `n,c,neo-nazi-pro-trump-raciste-anti-roux` by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**buy** , `n,c,<@299165255639105536>` by _viandox_ id, _<@299165255639105536>_
 
 **acc** ,  by _viandox_ id, _<@299165255639105536>_
 
-## le vendredi 26 octobre 2018 a 20:0
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**buy** , `n,c,@299165255639105536` by _viandox_ id, _<@299165255639105536>_
+
+**buy** , `n,c,<@299165255639105536>` by _viandox_ id, _<@299165255639105536>_
+
+**acc** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**buy** , `n,c,'';` by _viandox_ id, _<@299165255639105536>_
+
+**acc** ,  by _viandox_ id, _<@299165255639105536>_
+
+**buy** , `n,c,viandox` by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**msgS** ,  by _viandox_ id, _<@299165255639105536>_
+
+**msgS** , `-p` by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card..card..card..card..card..card..card..card..card..card..card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card..card..card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _craaaaaaaaaaaaaaaabeeeeee_ id, _<@448435528384249866>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+## le samedi 27 octobre 2018 a 22:46
 
 **command** -- `params` -- _nom_ -- _id_
 
-## le vendredi 26 octobre 2018 a 20:3
+**card** ,  by _viandox_ id, _<@299165255639105536>_
+
+## le samedi 27 octobre 2018 a 23:16
 
 **command** -- `params` -- _nom_ -- _id_
 
-**bot** , `...` by _viandox_ id, _<@299165255639105536>_
+**cad** ,  by _viandox_ id, _<@299165255639105536>_
 
-**.** ,  by _JAB_ id, _<@505009480635908096>_
-
-**..** ,  by _JAB_ id, _<@505009480635908096>_
-
-**.** ,  by _viandox_ id, _<@299165255639105536>_
-
-**..** ,  by _JAB_ id, _<@505009480635908096>_
-
-**shhop** ,  by _viandox_ id, _<@299165255639105536>_
-
-**shop** ,  by _viandox_ id, _<@299165255639105536>_
-
-**bot** , `..acc` by _viandox_ id, _<@299165255639105536>_
-
-**acc** ,  by _JAB_ id, _<@505009480635908096>_
-
-**bot** , `..help` by _viandox_ id, _<@299165255639105536>_
-
-**help** ,  by _JAB_ id, _<@505009480635908096>_
-
-**<@505009480635908096>,** , `veuiller,entré,un,argument,valide,ex,:,\help,private
-argument,valide,:,
-private,-->,envoi,la,page,d'aide,en,msg,privé
-here,-->,envoi,la,pàage,d'aide,ici` by _JAB_ id, _<@505009480635908096>_
-
-**bot** , `..help,private` by _viandox_ id, _<@299165255639105536>_
-
-**help** , `private` by _JAB_ id, _<@505009480635908096>_
-
-**bot** , `..help,preivate` by _viandox_ id, _<@299165255639105536>_
-
-**help** , `preivate` by _JAB_ id, _<@505009480635908096>_
-
-**<@505009480635908096>,** , `veuiller,entré,un,argument,valide,ex,:,\help,private
-argument,valide,:,
-private,-->,envoi,la,page,d'aide,en,msg,privé
-here,-->,envoi,la,pàage,d'aide,ici` by _JAB_ id, _<@505009480635908096>_
-
-**help** , `here` by _viandox_ id, _<@299165255639105536>_
+**card** ,  by _viandox_ id, _<@299165255639105536>_
 

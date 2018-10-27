@@ -1,5 +1,13 @@
 const url = new URL(location.href);
-const token = url.searchParams.get('token');
-if (token === null) {
-    location.href = '/login';
+var token = url.searchParams.get('token');
+if (token !== null & sessionStorage.getItem('JABdiscordToken') !== null) {
+    location.href = '/account';
 }
+if (token === null) {
+    if (sessionStorage.getItem('JABdiscordToken') === null) {
+        location.href = '/login';
+    } else {
+        token = sessionStorage.getItem('JABdiscordToken');
+    }
+} 
+var data = null;

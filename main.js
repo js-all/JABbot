@@ -22,14 +22,14 @@ bot.on('ready', () => {
 });
 
 // connecter le bot
-bot.login('TOKEN');
+bot.login(process.env.BOT_TOKEN);
 // initialization de l'objet acc servant a stocké les compte
 var acc = {};
 
 // log
 LOG.date();
 // quand des message sont envoyer
-bot.on('message', dbMsg );
+bot.on('message', dbMsg);
 
 
 function msg(message, acc) {
@@ -59,8 +59,6 @@ function msg(message, acc) {
                 files[hiu] = files[hiu].substring(0, (files[hiu].length - 3));
             }
             for (let hu = 0; hu < files.length; hu++) {
-                LOG.log(com, args, message.author.username, message.author.id);
-                LOG.cl(com, args, message.author.username, message.author.id);
                 co.noReq[files[hu]]._(com, prefix, args, message, bot);
             }
         });
@@ -71,8 +69,6 @@ function msg(message, acc) {
                 filesCom.push(files[j].substring(0, (files[j].length - 3)));
             }
             for (let j = 0; j < filesCom.length; j++) {
-                LOG.log(com, args, message.author.username, message.author.id);
-                LOG.cl(com, args, message.author.username, message.author.id);
                 const com_ = filesCom[j];
                 let a = co.req[com_]._(com, acc, prefix, args, message, bot);
                 if (com.modifyAcc) {
@@ -84,9 +80,11 @@ function msg(message, acc) {
                 }
             }
         });
+        LOG.log(com, args, message.author.username, message.author.id);
+        LOG.cl(com, args, message.author.username, message.author.id);
     }
 
-
+    
 
     // on incremente les point a chaque mesg
     if (currentAcc != undefined) {
