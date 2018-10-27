@@ -4,6 +4,7 @@ const server = require('http').Server(app);
 const { catchAsync } = require('./utils');
 const fetch = require('node-fetch');
 const io = require('socket.io')(server); 
+const dbm = require('../js/ext/dbManager');
 app.use(express.static(__dirname + '/public'));
 app.use('/discord/get',require('./discordGet'));
 app.use('/images', express.static(__dirname + '/res/img'));
@@ -55,13 +56,33 @@ io.on('connection',(socket) => {
         socket.emit('tokenToDataRes',JSON.stringify(json));
     }));
     socket.on('IDdbReq', (id) => {
-        const dbm = require('../js/ext/dbManager');
         dbm.getAcc((acc) => {
             const e = acc['<@'+id+'>'];
             if (e != undefined) {
                 socket.emit('IDdbRes',e);
             } else {
                 socket.emit('IDdbRes',{code: 0});
+            }
+        });
+    });
+    socket.on('createAccReq',(username, id) => {
+        dbm.getAcc(acc => {
+            if (acc["<@"+id+">"] !== undefined) {
+                socket.emit('createAccRes', false);
+            } else {
+                acc["<@"+id+">"] = {
+                    user: '',
+                    points: 0,
+                    lvl: 1,
+                    money: 0,
+                    msgS: 0,
+                    msg: 0,
+                    roles: [],
+                    Object: {}
+                }
+                acc["<@"+id+">"].user = username;
+                dbm.setAcc(acc);
+                socket.emit('createAccRes', true);
             }
         });
     });

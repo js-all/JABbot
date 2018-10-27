@@ -32,6 +32,7 @@ function callBackIfTokenGet() {
     document.getElementById('pdp').style.backgroundImage = 'url("https://cdn.discordapp.com/avatars/'+data.id+'/'+data.avatar+'.png")'
     document.getElementById('logout').style.display = 'block';
     document.getElementById('login').innerHTML = data.username;
+    
 };
 function callBackIfTokenDidntGet() {
 

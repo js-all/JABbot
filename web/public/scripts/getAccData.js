@@ -9,6 +9,7 @@ if (JSON.parse(res).code != undefined) {
     }
     } else {
         data = JSON.parse(res);
+        callWhenData();
         socket.emit('IDdbReq',data.id);
     }
 });
@@ -19,8 +20,11 @@ socket.on('IDdbRes',(res) => {
             sessionStorage.setItem('JABdiscordToken',token);
             location.href = '/account';
         }
-        callWhenData();
+        callWhendb();
     } else {
-        location.href = '/login';
+        if (sessionStorage.getItem('JABdiscordToken') === null) {
+            sessionStorage.setItem('JABdiscordToken',token);
+            location.href = '/account';
+        }
     }
 });
