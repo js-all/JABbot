@@ -9,7 +9,6 @@ const CLIENT_SECRET = process.env.BOT_SECRET;
 const redirect = encodeURIComponent('http://localhost:4567/discord/get/callback');
 router.get('/login', (req, res) => {
   res.redirect(`https://discordapp.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${redirect}&response_type=code&scope=identify%20guilds`);
-             //`https://discordapp.com/api/oauth2/authorize?client_id=505316364567707652&redirect_uri=${redirect}&response_type=code&scope=identify%20guilds`
 });
 router.get('/callback', catchAsync(async (req, res) => {
     if (!req.query.code) res.redirect('/');
