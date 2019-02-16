@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run "node " & chr(34) & "C:\Users\Administrateur\Desktop\test boi\bac.js" & chr(34)

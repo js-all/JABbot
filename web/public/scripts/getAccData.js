@@ -20,11 +20,16 @@ socket.on('IDdbRes',(res) => {
             sessionStorage.setItem('JABdiscordToken',token);
             location.href = '/account';
         }
+        data.xp = {
+            v: data.db.msgS,
+            o: data.db.lvl * data.db.lvl
+        }
         callWhendb();
     } else {
         if (sessionStorage.getItem('JABdiscordToken') === null) {
             sessionStorage.setItem('JABdiscordToken',token);
             location.href = '/account';
         }
+        callWhenNodb();
     }
 });

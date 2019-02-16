@@ -21,6 +21,8 @@ body {
     --nav-color: rgb(255, 102, 0);
     --nav-color-2: rgb(255, 142, 66);
     background-color: var(--nav-color);
+    z-index: 1000;
+    box-shadow: 0 0 15px 0 grey;
 }
 
 
@@ -111,7 +113,6 @@ body {
     position: absolute;
     top:70px;
     left:0;
-    height:0px;
     width:100%;
 }
 

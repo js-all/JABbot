@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="icon" type="image/png" href="images/favicon/favicon_16x16.png" sizes="16x16">  
+    <link rel="icon" type="image/png" href="images/favicon/favicon_32x32.png" sizes="32x32">  
+    <link rel="icon" type="image/png" href="images/favicon/favicon_96x96.png" sizes="96x96">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>account</title>
+    <title>JABbot - compte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/acc.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
     <script src="scripts/acc.js"></script>
 </head>
+
 <body>
     <div id="nav">
-            <div id="icon" onclick="location.href = '/'"></div>
-            <div id="menu">
-                <div id="joinb" onclick="location.href = '/join'"">ajouter JAB</div>
+        <div id="icon" onclick="location.href = '/'"></div>
+        <div id="menu">
+            <div id="joinb" onclick="location.href = '/join'"">ajouter JAB</div>
             </div>
             <div id="account">
                 <div id="pdp" onclick="location.href = '/account'"></div>
                 <div id="login" class="log" onclick="location.href = '/account'"></div>
                 <div id="logout" class="log" style="display: block;" onclick="logout()">logout</div>
             </div>
-    </div>
-    <div id="container">
-        <div id="acc">
-
         </div>
-        <div id="noAcc">
-            <p id="noAccp" class="g"><h1 class="g">Vous ne posseder pas de compte JAB.</h1></p>
-            <p id="naAccs" class="g"><h3 class="g">Mais vous pouver vous en crée un en cliquant <a onclick="createAcc()">ici</a> ou via discord comme expliquer <a>ici</a> !</h3></p>
+        <div id="container">
+            <div id="acc">
+                <div id="accCardC">
+                    <div id="accIcon">
+                        <svg id="xpc" width="155" height="155" viewBox="0 0 800 600">
+                            <path id="path" d="M 150 300 A 50 50 0 1 1 650 300 A 50 50 0 1 1 150 300 " stroke-width="100" stroke="rgb(10, 100, 255)" fill="none" stroke-opacity="0.5"></path>
+                        </svg>
+                    </div>
+                    <div id="accCard">
+                        <div id="colLeft">
+                            <div id="colLname"></div>
+                            <div id="colLlvl"></div>
+                            <div id="colLrank"></div>
+                            <div id="colLchannel">
+                                Channels Perso
+                            </div>
+                            <div id="colLchannelE">
+                            </div>
+                        </div>
+                        <div id="colRight">
+                            <div id="points" class="data"></div>
+                            <div id="money" class="data"></div>
+                            <div id="msg" class="data"> </div>
+                            <div id="roles" class="data"></div>
+                            <div id="msgS" class="data"></div>
+                            <div id="servers" style="width:400px;text-align: left;text-indent: 20px;" class="data">
+                                servers
+                            </div>
+                            <div id="xp" class="data">
+                                <div id="xpb"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="noAcc">
+                <p id="noAccp" class="g">
+                    <h1 class="g">Vous ne posseder pas de compte JAB.</h1>
+                </p>
+                <p id="naAccs" class="g">
+                    <h3 class="g">Mais vous pouver vous en crée un en cliquant <a onclick="createAcc()">ici</a> ou via
+                        discord comme expliquer <a>ici</a> !</h3>
+                </p>
+            </div>
         </div>
-    </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./scripts/getAccData.js"></script>
-    <script src="./scripts/accMain.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./scripts/getAccData.js"></script>
+        <script src="./scripts/accMain.js"></script>
 </body>
+
 </html>

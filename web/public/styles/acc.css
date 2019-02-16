@@ -1,7 +1,251 @@
 #noAccp {
     margin-top:35vh;
 }
+#noAcc {
+    display: none;
+    text-align: center;
+}
+#acc {
+    display: none;
+}
+#accCardC {
+    width: 550px;
+    height: 750px;
+    position: absolute;
+    left:50%;
+    transform:  translateX(-50%);
+    top: 100px;
+}
+#container {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+#accIcon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border:1px solid grey;
+    position: absolute;
+    top:0px;
+    margin-left: 23px;
+    background-size: 100% 100%;
+    transition: 0.21s;
+    box-shadow: 0 0 5px 0 black;
+}
+#accCard {
+    z-index: -2;
+    position: relative;
+    top:-30px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    height: 620px;
+}
+#xpc {
+    z-index: -1000;
+    position: relative;
+    top: -27.5px;
+    transform: rotate(90deg) rotateX(180deg);
+    left: -27.5px;
+}
+#colLeft {
+    padding: 150px 5px 20px 5px;
+    flex: 1;
+    border: 1px grey solid;
+    display: flex;
+    flex-direction: column;
+    width: 150px !important;
+    height: fit-content;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+}
+#colLname {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#colLname2 {
+    border-top: 1px grey solid;
+    font-weight: 500;
+    color: grey;
+    font-size: 10px;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    margin: auto;
+}
+#colLlvl {
+    text-align: center;
+}
+#colLlvl2 {
+    font-size: 30px;
+    margin: 0 0 0 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#colLrank {
+    text-align: center;
+    margin-bottom:  15px;
+}
+#colLrank2 {
+    display: inline;
+}
+#colRight {
+    margin-top: 15px;
+    height: 98%;
+    border: 1px grey solid;
+    width: 400px !important;
+    padding-top: 20px;
+    flex: 3;
+    min-height: 100px;
+    position: relative;
+    left:-1px;
+}
+#colLchannel {
+    text-align: center;
+}
+#colLchannelE {
+    text-align: left;
+    text-indent: 10px;
+}
+#noch {
+    margin-top: 10px;
+    text-align: center;
+    text-indent: 0;
+    font-weight: 500;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#servers {
+    text-align: center;
+    width: 150px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+#xp {
+    position: absolute;
+    bottom: 5px;
+    width: 370px;
+    height: 32px;
+    border-radius: 32px;
+    border: 1px grey solid;
+    left: 50%;
+    transform:  translateX(-50%);
+    overflow: hidden;
+}
+#xpb {
+    height: 32px;
+    background-color: rgb(34, 113, 231);
+    position: relative;
+    left: -1px;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+}
+.serverBoxContainer {
+    text-align: center;
+    width: 130px;
+    margin-left:10px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 5px;
+    transition: 0.2s;
+    background-color: white;
+}
+.serverBoxIcon {
+    background-color: rgb(47, 49, 54);
+    box-sizing: border-box;
+    float: left;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px !important;
+    background-size: 100% 100%;
+    transition-delay: 0;
+}
+.serverBoxName {
+    float: left;
+    display: none;
+    text-indent: 10px;
+    transition-delay: 0.2s !important;
+    opacity: 0;
+    width: 50px;
+}
+.serverBoxContainer:hover {
+    width: 200px;
+}
+.serverBoxContainer:hover .serverBoxName {
+    display: block;
+    opacity: 1;
+    min-width: 80px;
+    position: relative; 
+    left: 10px;
+}
 .g {
     color:grey !important;
-    text-align: center;
+}
+.d_b {
+    margin-top: 40px;
+    margin-left: 20px;
+    color :grey;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.role {
+    text-indent: 40px;
+}
+.data {
+    margin-bottom: 10px;
+}
+.as {
+    position: relative;
+    top: -15px;
+    margin-left: 60px;
+    color: black;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-decoration-line: none;
+    width: 50px;
+    transition-delay: .2s;
+    text-decoration-color: grey;
+}
+.as:hover {
+    text-decoration-line: underline overline;
+}
+.as::after {
+    content: '';
+    position: relative;
+    top: -2px;
+    display: block;
+    background-color: grey;
+    width: 1px;
+    top: -21px;
+    left: 0px;
+    height: 19px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .2s;
+}
+.as::before {
+    content: '';
+    position: relative;
+    top: -2px;
+    display: block;
+    background-color: grey;
+    width: 1px;
+    top: 19px;
+    left: 45px;
+    height: 19px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .2s;
+}
+.as:hover::before {
+    opacity: 1;
+}
+.as:hover::after {
+    opacity: 1;
 }
